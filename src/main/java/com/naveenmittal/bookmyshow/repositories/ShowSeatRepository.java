@@ -12,5 +12,5 @@ public interface ShowSeatRepository extends JpaRepository<ShowSeat, Long> {
     List<ShowSeat> findAllById(Iterable<Long> showSeatIds);
 
     @Override
-    <S extends ShowSeat> List<S> saveAll(Iterable<S> entities);
+    ShowSeat save(ShowSeat entities);
 }

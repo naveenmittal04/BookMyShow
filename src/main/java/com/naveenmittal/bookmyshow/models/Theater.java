@@ -16,14 +16,4 @@ public class Theater extends BaseModel{
     private String address;
     @OneToMany
     private List<Screen> screens;
-
-    public Theater() {
-
-    }
-
-    public Theater(Long id) {
-        super(id);
-        //TODO Auto-generated constructor stub
-    }
-    
 }

@@ -58,8 +58,9 @@ public class TicketService {
         }
         for (ShowSeat showSeat: showSeats) {
             showSeat.setSeatStatus(SeatStatus.BLOCKED);
+            showSeatRepository.save(showSeat);
         }
-        showSeatRepository.saveAll(showSeats);
+
 
         Ticket ticket = new Ticket();
         ticket.setShowSeats(showSeats);

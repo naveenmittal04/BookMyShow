@@ -19,8 +19,4 @@ public class ShowSeat extends BaseModel{
     private SeatStatus seatStatus;
     @ManyToOne
     private ShowSeatType showSeatType;
-
-    public ShowSeat() {
-
-    }
 }

@@ -9,8 +9,4 @@ import lombok.Setter;
 @Entity
 public class ShowSeatType extends BaseModel{
     private Long price;
-
-    public ShowSeatType() {
-
-    }
 }
